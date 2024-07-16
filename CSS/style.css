@@ -7,8 +7,15 @@
     display: flex;
     align-items: center;
 }             
-#navbar{
- position: relative;
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
 }
 
 #logo{
@@ -19,23 +26,21 @@
     height: 59px;
 }
 
+#navbar{
+    position: relative;
+}
+
+
 #navbar ul{
     display: flex;
-}
-#navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 0.4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #navbar ul li{
     list-style: none;
     font-size: 1.3rem;
 }
 #navbar ul li a{
+    color: white;
   display: block;
   padding: 3px 22px;
   border-radius: 20px;
@@ -44,4 +49,51 @@
 #navbar ul li a:hover{
     color:black;
     background-color:white;
+}
+
+#home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+height: 400px;
+justify-content: center;
+align-items: center;
+}
+#home::before{
+    content: "";
+    background:url("../img/photo2.jpg") ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89 ;
+    background-size: cover;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:serif ;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size:1.5rem ;
+    font-family:serif ;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
 }
