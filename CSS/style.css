@@ -64,13 +64,13 @@ align-items: center;
     content: "";
     background:url("../img/photo2.jpg") ;
     position: absolute;
-    height: 100%;
+    height: 642px;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index: -1;
     opacity:0.89 ;
-    background-size: cover;
+   
 
 }
 #home h1{
@@ -138,15 +138,19 @@ align-items: center;
 img{
     width: 300px;
 }
-
+#client-section{
+    height: 344px;
+    position: relative;
+}
 #client-section::before{
     content: "";
     position: absolute;
-    background: url("../img/food1.jpg");
+    background: url("../img/photos3.jpg");
     width: 100%;
     height: 100%;
     z-index: -1;
     opacity: 0.3;
+    background-size: cover;
 }
 
 #clients{
@@ -158,7 +162,8 @@ img{
     padding: 34px;
 }
 
-#clients-img{
-    height: 124px;
+#clients img{
+    height: 100px;
+    width: 190px;
 }
 
