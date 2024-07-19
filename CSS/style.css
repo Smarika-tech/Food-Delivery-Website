@@ -6,7 +6,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
 }             
 
@@ -87,7 +87,7 @@ align-items: center;
 }
 
 #services{
-     margin:34px;
+     margin:10px;
      display: flex;
 }
 
@@ -114,7 +114,7 @@ align-items: center;
 }
 
 .h-primary{
-    font-family: serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 3.8rem;
     padding: 12px;
 }
@@ -211,3 +211,29 @@ img{
         font-size: 1.3rem;
         font-family: serif;
     }
+#btn:hover{
+    border-color: yellow;
+    border-style:groove;
+    border-width: 3px;
+}
+#services .box:hover{
+   border-color: yellow;
+   border-style: ridge;
+   border-width: 4px;
+}
+#contact-box input:hover{
+    border-color: greenyellow;
+    border-style: groove;
+    border-width: 3px;
+}
+#contact-box textarea:hover{
+    border-color: greenyellow;
+    border-style: groove;
+    border-width: 3px;
+}
+
+#contact-boxmessage:hover{
+    border-color: greenyellow;
+    border-style: groove;
+    border-width: 3px;
+}
